@@ -14,6 +14,11 @@ docker-compose up --build
 docker exec -it web python manage.py createsuperuser
 ```
 
+## Note
+If you will face 'permission denied' or other permission related problems while trying to run the Docker, this can come from the 'startup.sh' file.
+
+Just change it's permissions using [chmod] command.
+
 ## Usage
 1. Run 'http://localhost:8000/' port on the browser.
 2. Run 'http://localhost:8000/admin/' for Admin Pannel/Dashboard.
