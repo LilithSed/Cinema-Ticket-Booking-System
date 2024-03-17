@@ -15,7 +15,7 @@ docker exec -it web python manage.py createsuperuser
 ```
 
 ## Note
-If you face $${\color{red}permission denied}$$ or other permission related problems while trying to run the Docker, this can come from the 'startup.sh' file.
+If you face 'permission denied' or other permission related problems while trying to run the Docker, this can come from the 'startup.sh' file.
 
 Just change it's permissions using [chmod] command.
 
