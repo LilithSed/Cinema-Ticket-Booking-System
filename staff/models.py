@@ -21,7 +21,7 @@ class Film(models.Model):
 
 class Banner(models.Model):
     movie = models.ForeignKey(
-        film, verbose_name="Movie", on_delete=models.CASCADE, blank=True, null=True)
+        Film, verbose_name="Movie", on_delete=models.CASCADE, blank=True, null=True)
     url = models.URLField(verbose_name="Banner Image URL",
                           blank=True, null=True)
     modified = models.DateTimeField(auto_now=True, blank=True, null=True)
@@ -37,7 +37,7 @@ class Show(models.Model):
         (3, "Green")
     )
     movie = models.ForeignKey(
-        film, verbose_name="Movie", on_delete=models.CASCADE, blank=True, null=True)
+        Film, verbose_name="Movie", on_delete=models.CASCADE, blank=True, null=True)
     start_date = models.DateField(verbose_name="Start Date", null=True)
     end_date = models.DateField(verbose_name="End Date", null=True)
     price = models.PositiveIntegerField(verbose_name="Ticket Price")
