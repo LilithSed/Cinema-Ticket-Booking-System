@@ -1,9 +1,5 @@
 # Cinema Ticket Booking App
 
-## Note
-Although in the task description there wasn't a point for docker integration, I decided to use docker-compose to facilitate the setup process.
-Due to it you don't need to set up the database, because it will be done automatically after running the docker-compose.
-
 ## Installation
 Follow the commands below to configure the program:
 
