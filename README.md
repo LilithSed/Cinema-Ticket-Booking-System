@@ -50,6 +50,3 @@ Note that 'Start Date' Can't be sooner than the current day.
 Now you can see the movie inside the selected room and book a ticket for it.  
 You can create more movies for different days and rooms.
 
-### Important
-I know this could have been done better if I had more time, but hope you will like it.
-
