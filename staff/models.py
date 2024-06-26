@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class film(models.Model):
+class Film(models.Model):
     ROOM_CHOICES = (
         (1, "Blue"),
         (2, "Red"),
@@ -19,7 +19,7 @@ class film(models.Model):
         return self.movie_name
 
 
-class banner(models.Model):
+class Banner(models.Model):
     movie = models.ForeignKey(
         film, verbose_name="Movie", on_delete=models.CASCADE, blank=True, null=True)
     url = models.URLField(verbose_name="Banner Image URL",
@@ -30,7 +30,7 @@ class banner(models.Model):
         return self.movie.movie_name
 
 
-class show(models.Model):
+class Show(models.Model):
     ROOM_CHOICES = (
         (1, "Blue"),
         (2, "Red"),
